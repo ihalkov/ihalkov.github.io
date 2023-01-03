@@ -1,0 +1,103 @@
+/* select all elements */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Zen Dots', cursive;
+}
+
+/* style for the board */
+/* css grid */
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    border: 3px solid #FF4D5E;
+    max-width: 300px;
+    background-color: #FFE480;
+}
+
+.tile {
+    border: 3px solid #FF4D5E;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.playerX {
+    color: blue;
+}
+
+.playerO {
+    color: green;
+}
+
+.tie {
+    color: orangered;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: auto;
+}
+
+.display {
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+}
+
+section {
+    text-align: center;
+}
+
+button {
+    background-color: #FFE480;
+    color: #FF4D5E;
+    font-size: large;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    min-width: 150px;
+    min-height: 20px;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button:active {
+    transform: translateY(4px);
+}
+
+#reset {
+    border-radius: 0px 15px 50px 30px;
+    background-color: #FFE480;
+    color: black;
+    border: black solid;
+}
+
+
+#restart {
+    border-radius: 15px 0px 30px 50px;
+    background-color: #FF4D5E;
+    color: black;
+    border:black solid;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    background-color:white;
+    color:black;
+}

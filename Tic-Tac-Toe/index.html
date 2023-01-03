@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <!-- adding google font -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet"> 
+    <script src="./app.js"></script>
+</head>
+<body>
+  
+    <!-- to wrap everything -->
+    <main class="background">
+        <section class="title">
+            <h1>Tic-Tac-Toe</h1>
+        </section>
+        <!-- current user -->
+        <section class="display">
+            <div id="playerInfo">Player: <span class="current-player playerX">X</span>'s turn</div>
+            <div id="displayWinner" class="hide"></div>
+
+            <!-- display who currently win can change the display to the current win -->
+        </section>
+        <!-- can be updated to with JS -->
+        <section class="container">
+            <!-- add divs by JS -->
+        </section>
+        <section class="display announcer">
+            <div class="playerX"><span id="xWon">X = 0</span></div>
+            <div class="playerO"><span id="oWon">O = 0</span></div>
+            <div class="tie"><span id="tie">TIE = 0</span></div>
+        </section>
+        <section class="controls">
+            <button type="button" id="reset">RESET</button>
+            <button type="button" id="restart">RESTART</button>
+        </section>
+        <a href="../index.html">Back</a>
+    </main>
+</body>
+</html>
