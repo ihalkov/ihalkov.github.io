@@ -34,6 +34,7 @@ window.onload = () => {
 function addCountdownTimer(countdownTimer) {
     const mainTimer = document.createElement('div');
     mainTimer.classList.add('main-timer');
+    
 
     const msTimer = document.createElement('div');
     msTimer.classList.add('ms-timer');
@@ -239,6 +240,8 @@ function onClear2() {
     // update timer elements
     updateCountdownTime(...Object.values(fromMsToTime(countdown.timeLeft)));
     updateMS(0);
+
+    removeBlink('main-timer');
     
     // update object holding data info
 
@@ -340,6 +343,25 @@ function addControlButtons() {
     container.appendChild(backBtn);
 }
 
+function addBlink(className) {
+    document.querySelector(`.${className}`).classList.add('blink-class');
+}
+
+function removeBlink(className) {
+    document.querySelector(`.${className}`).classList.remove('blink-class');
+}
+
+// function addRemoveBlink(className) {
+//     const blinkClass = 'blink-class';
+//     const hasBlink = elem.classList.contains(blinkClass);
+
+//     if (hasBlink) {
+//         elem.classList.remove(blinkClass);
+//     } else {
+//         elem.classList.add('blink-class');
+//     }
+// }
+
 function switchPauseContinue() {
     const pauseHasHideClass = document.querySelector('#pauseBtn').classList.contains('hide');
 
@@ -380,6 +402,7 @@ function setTimeInterval() {
         // update ms-timer
         if (countdown.timeLeft < 1) {
             domElem('#pauseBtn').classList.add('hide');
+            addBlink('main-timer');
             startAlarmSound();
             clearInterval(countdown.intervalId);
         }

@@ -1,6 +1,5 @@
 * {
     font-family: 'Fredoka One', cursive;
-
     padding: 0;
     margin: 0;
     
@@ -179,4 +178,20 @@ h1 {
 
 #continueBtn {
     background-color: lightblue;
+}
+
+.blink-class {
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    25% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0.5;
+    }
 }
