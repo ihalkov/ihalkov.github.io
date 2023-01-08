@@ -32,45 +32,62 @@ h1 {
 }
 
 .container {
-    /* border: 2px solid blue; */
     margin: 0 auto;
-    padding: 2px;
+    padding: 0 auto;
     min-width: 100px;
     max-width: 500px;
     width: auto;
 }
 
-/* .countdown-timer {
-    margin: 0 auto;
-    padding: 2px;
-    border: 1px solid orangered;
-} */
-
-.main-timer {
-    /* font-family: 'Big Shoulders Stencil Display', cursive; */
+.countdown-timer {
     border: 3px solid darkslategray;
     background-color: yellow;
     color: darkslategray;
     border-radius: 15px;
+    /* text-align: center; */
+    /* vertical-align: middle; */
+    /* margin: 0 auto; */
+    /* padding: 0 auto; */
+    /* font-size: 70px; */
+    /* font-weight: bold; */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    width: auto;
+    height: auto;
+}
+
+.timer {
+    /* font-family: 'Big Shoulders Stencil Display', cursive; */
+    /* border: 3px solid darkslategray;
+    background-color: yellow;
+    color: darkslategray;
+    border-radius: 15px; */
+    /* text-align: center; */
+    /* vertical-align: middle; */
+    /* margin: 0 auto; */
+    /* padding: 0 auto; */
     text-align: center;
-    vertical-align: middle;
-    margin: 0 auto;
-    padding: 0 auto;
     font-size: 70px;
     font-weight: bold;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 70% 30%;
+    /* display: grid;
+    grid-template-columns: 25% 10% 25% 10% 25%;
+    grid-template-rows: 80% 20%; */
     width: auto;
     height: auto;
 }
 
 .ms-timer {
-    width: 490%;
-    font-size: small;
-    text-align: right;
-    
+    position: relative;
+    bottom: 80%;
+    left: 85%;
 }
+
+.milliseconds {
+    font-size: medium;
+    font-style: oblique;
+}
+
 
 .controls {
     /* border: solid 1px burlywood; */
@@ -106,8 +123,6 @@ h1 {
 .function-buttons {
     width: auto;
     padding: 5px;
-    /* background-color: antiquewhite; */
-    /* border: 1px solid red; */
 }
 
 .button {
