@@ -35,10 +35,10 @@ h1 {
     margin: 0 auto;
     padding: 0 auto;
     min-width: 100px;
-    max-width: 800px;
+    max-width: 500px;
     width: auto;
-    position: relative;
-    top: 440px;
+    /* position: relative;
+    top: 440px; */
     /* bottom: 50%; */
 }
 
@@ -73,7 +73,7 @@ h1 {
     /* margin: 0 auto; */
     /* padding: 0 auto; */
     text-align: center;
-    font-size: 120px;
+    font-size: 70px;
     font-weight: bold;
     /* display: grid;
     grid-template-columns: 25% 10% 25% 10% 25%;

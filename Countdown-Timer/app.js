@@ -237,11 +237,11 @@ window.onload = () => {
     }
 
     function addBlink() {
-        document.querySelector('.timer').classList.add('blink-class');
+        document.querySelector('.countdown-timer').classList.add('blink-class');
     }
 
     function removeBlink() {
-        document.querySelector('.timer').classList.remove('blink-class');
+        document.querySelector('.countdown-timer').classList.remove('blink-class');
     }
 
     function switchPauseContinue() {
